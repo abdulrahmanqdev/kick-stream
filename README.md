@@ -1,30 +1,108 @@
-# Kick Stream
-- Kick allows broadcasters to share automatic broadcasts on the discord platform
+<div align="center">
 
-# Getting a streamer on Kick
+# 🎮 kick-stream
 
-```js
-const kickClient = require("kick-stream");
-const streamer = await kickClient.getStreamer("slow3rxq") //Streamer Name
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kick-53FC18?style=for-the-badge&logo=kick&logoColor=black"/>
+</p>
 
-console.log(streamer) //{...} Streamer Data
+<p align="center">
+  <img src="https://img.shields.io/github/stars/abdulrahmanqdev/kick-stream?style=flat-square&color=yellow"/>
+  <img src="https://img.shields.io/github/forks/abdulrahmanqdev/kick-stream?style=flat-square&color=green"/>
+  <img src="https://img.shields.io/github/last-commit/abdulrahmanqdev/kick-stream?style=flat-square&color=orange"/>
+</p>
+
+<p align="center">
+  <strong>Kick.com yayın platformu için geliştirilmiş entegrasyon aracı.</strong><br/>
+  Yayın verilerini çek, chat mesajlarını dinle ve Kick API'sini kolayca kullan.
+</p>
+
+</div>
+
+---
+
+## 📖 Genel Bakış
+
+**kick-stream**, Kick.com platformuyla etkileşim kurmayı kolaylaştıran bir Node.js aracıdır. Yayın durumu sorgulaması, canlı chat entegrasyonu ve yayıncı bilgilerini almak için kullanılabilir.
+
+---
+
+## ✨ Özellikler
+
+- 📡 Gerçek zamanlı chat dinleme
+- 🎥 Yayın durumu kontrolü (canlı / çevrimdışı)
+- 👤 Yayıncı profil verisi çekme
+- 🔔 Yayın başlama/bitme bildirimleri
+- ⚡ Hafif ve hızlı yapı
+
+---
+
+## 🛠️ Teknoloji Yığını
+
+| Teknoloji | Amaç |
+|---|---|
+| JavaScript | Dil |
+| Node.js | Çalışma Ortamı |
+| Kick API | Platform Entegrasyonu |
+| WebSocket | Gerçek Zamanlı İletişim |
+
+---
+
+## 🚀 Başlarken
+
+```bash
+git clone https://github.com/abdulrahmanqdev/kick-stream.git
+cd kick-stream
+npm install
 ```
 
-# Getting a stream data on Kick
+### Ortam Değişkenleri
 
-```js
-const kickClient = require("kick-stream");
-const stream = await kickClient.getStream("slow3rxq") //Streamer Name
+`.env` dosyası oluştur:
 
-console.log(stream) //{...} Stream Data
+```env
+KICK_USERNAME=yayinci_kullanici_adi
 ```
 
-# Optional
+### Çalıştır
 
-You can use Kick URL Solver! Just use like this:
-
-```js
-const kickClient = require("kick-stream")
-
-console.log(kickClient.solveURL("https://kick.com/slow3rxq")) // "slow3rxq"
+```bash
+node index.js
 ```
+
+---
+
+## 📁 Proje Yapısı
+
+```
+kick-stream/
+├── src/
+│   ├── chat.js         # Chat entegrasyonu
+│   ├── stream.js       # Yayın durum takibi
+│   └── api.js          # Kick API istekleri
+├── index.js
+├── .env
+└── package.json
+```
+
+---
+
+## 🤝 Katkıda Bulunma
+
+1. Repoyu fork'la
+2. Yeni özellik ekle
+3. Pull Request aç
+
+---
+
+## 📄 Lisans
+
+[MIT Lisansı](LICENSE) kapsamında açık kaynaklıdır.
+
+---
+
+## 👤 Geliştirici
+
+**@abdulrahmanqdev**
