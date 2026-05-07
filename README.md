@@ -78,11 +78,8 @@ node index.js
 
 ```
 kick-stream/
-├── src/
-│   ├── chat.js         # Chat entegrasyonu
-│   ├── stream.js       # Yayın durum takibi
-│   └── api.js          # Kick API istekleri
 ├── index.js
+├── kick.js
 ├── .env
 └── package.json
 ```
@@ -94,12 +91,6 @@ kick-stream/
 1. Repoyu fork'la
 2. Yeni özellik ekle
 3. Pull Request aç
-
----
-
-## 📄 Lisans
-
-[MIT Lisansı](LICENSE) kapsamında açık kaynaklıdır.
 
 ---
 
